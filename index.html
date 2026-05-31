@@ -442,7 +442,7 @@
                     <!-- 基本信息 -->
                     <div class="text-center mb-6">
                         <h1 class="text-2xl font-bold mb-2">Klece</h1>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">一个普通人</p>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">逆者皆斩</p>
                         <div class="flex justify-center gap-3">
                             <a 
                                 href="https://github.com/Klece" 
@@ -518,9 +518,12 @@
                         个人介绍
                     </h2>
                     <div class="max-w-none" id="readme-content">
-                        <h1 id="token">没钱充token了</h1>
-<p>谁愿意v我点钱</p>
-<h2 id="_1">测试</h2>
+                        <h1 id="blog">静观其变的个人blog</h1>
+<ul>
+<li>我是一名普通的高中生</li>
+<li>可以给我的这个blog项目点个star吗 &gt;_&lt;</li>
+</ul>
+<h2 id="_1">放个图镇一下</h2>
 <p><img alt="neko" src="content/image.png" /></p>
                     </div>
                 </div>
@@ -553,7 +556,7 @@
                                         <h3 class="text-lg font-semibold text-primary dark:text-primary-dark">Kleceblog</h3>
                                         <span class="text-sm text-gray-500 dark:text-gray-400 flex items-center">
                                             <i class="fa-solid fa-star mr-1"></i>
-                                            0
+                                            1
                                         </span>
                                     </div>
                                     <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">一个静态的blog，无需服务器即可部署，个人二改</p>
@@ -568,7 +571,53 @@
                                     </div>
                                 </a>
                             
+                                <a href="https://github.com/Klece/jj" target="_blank" rel="noopener noreferrer" class="block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl repo-item hover:bg-gray-100 dark:hover:bg-gray-600 ">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark">jj</h3>
+                                        <span class="text-sm text-gray-500 dark:text-gray-400 flex items-center">
+                                            <i class="fa-solid fa-star mr-1"></i>
+                                            0
+                                        </span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">None</p>
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        
+                                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs">Shell</span>
+                                        
+                                    </div>
+                                    <div class="flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+                                        <span><i class="fa-solid fa-code mr-1"></i>Shell</span>
+                                        <span>更新于 2026-05-30</span>
+                                    </div>
+                                </a>
+                            
+                                <a href="https://github.com/Klece/ceshi" target="_blank" rel="noopener noreferrer" class="block p-4 bg-gray-50 dark:bg-gray-700 rounded-xl repo-item hover:bg-gray-100 dark:hover:bg-gray-600 project-hidden">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark">ceshi</h3>
+                                        <span class="text-sm text-gray-500 dark:text-gray-400 flex items-center">
+                                            <i class="fa-solid fa-star mr-1"></i>
+                                            0
+                                        </span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">111</p>
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        
+                                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs">HTML</span>
+                                        
+                                    </div>
+                                    <div class="flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+                                        <span><i class="fa-solid fa-code mr-1"></i>HTML</span>
+                                        <span>更新于 2026-05-30</span>
+                                    </div>
+                                </a>
+                            
                         
+                    </div>
+                    
+                    <div class="mt-4 text-center" id="toggle-projects-wrap">
+                        <button id="toggle-projects" onclick="toggleProjects()" class="inline-flex items-center px-5 py-2 rounded-full bg-gradient-custom text-white font-medium hover:opacity-90 transition-opacity">
+                            <i class="fa-solid fa-chevron-down mr-1"></i> 展开全部项目
+                        </button>
                     </div>
                     
                 </div>
@@ -647,7 +696,7 @@
             const ctx = document.getElementById('contributionChart');
             if (ctx) {
                 // 使用后端传递的真实贡献数据
-                const contributions = [{"count": 0, "date": "1\u6708"}, {"count": 0, "date": "2\u6708"}, {"count": 3, "date": "3\u6708"}, {"count": 5, "date": "4\u6708"}, {"count": 2, "date": "5\u6708"}, {"count": 0, "date": "6\u6708"}, {"count": 0, "date": "7\u6708"}, {"count": 0, "date": "8\u6708"}, {"count": 0, "date": "9\u6708"}, {"count": 0, "date": "10\u6708"}, {"count": 0, "date": "11\u6708"}, {"count": 0, "date": "12\u6708"}];
+                const contributions = [{"count": 0, "date": "1\u6708"}, {"count": 0, "date": "2\u6708"}, {"count": 3, "date": "3\u6708"}, {"count": 5, "date": "4\u6708"}, {"count": 4, "date": "5\u6708"}, {"count": 0, "date": "6\u6708"}, {"count": 0, "date": "7\u6708"}, {"count": 0, "date": "8\u6708"}, {"count": 0, "date": "9\u6708"}, {"count": 0, "date": "10\u6708"}, {"count": 0, "date": "11\u6708"}, {"count": 0, "date": "12\u6708"}];
                 const labels = contributions.map(c => c.date);
                 const data = contributions.map(c => c.count);
 
@@ -727,7 +776,7 @@
             }
 
             // 诗句轮播功能
-            const poems = ["\u6d77\u5185\u5b58\u77e5\u5df1\uff0c\u5929\u6daf\u82e5\u6bd4\u90bb"];
+            const poems = ["\u6d77\u5185\u5b58\u77e5\u5df1\uff0c\u5929\u6daf\u82e5\u6bd4\u90bb", "\u4e07\u9877\u6ce2\u5149\u6447\u6708\u788e\uff0c\u4e00\u5929\u98ce\u9732\u85d5\u82b1\u9999", "\u5fae\u5fae\u98ce\u7c07\u6d6a\uff0c\u6563\u4f5c\u6ee1\u6cb3\u661f", "\u6d41\u6cc9\u5f97\u6708\u5149\uff0c\u5316\u4e3a\u4e00\u6eaa\u96ea", "\u65ad\u8679\u9701\u96e8\uff0c\u51c0\u79cb\u7a7a\uff0c\u5c71\u67d3\u4fee\u7709\u65b0\u7eff", "\u6c34\u5bd2\u6c5f\u9759\uff0c\u6ee1\u76ee\u9752\u5c71\uff0c\u8f7d\u6708\u660e\u5f52", "\u6c5f\u5bd2\u6c34\u4e0d\u6d41\uff0c\u9c7c\u56bc\u6885\u82b1\u5f71", "\u9ad8\u677e\u6f0f\u758f\u6708\uff0c\u843d\u5f71\u5982\u753b\u5730", "\u5750\u770b\u82cd\u82d4\u8272\uff0c\u6b32\u4e0a\u4eba\u8863\u6765", "\u8109\u8109\u82b1\u758f\u5929\u6de1\uff0c\u4e91\u6765\u53bb\u3001\u6570\u679d\u96ea", "\u591c\u9759\u6c34\u5bd2\u9c7c\u4e0d\u98df\uff0c\u6ee1\u8239\u7a7a\u8f7d\u6708\u660e\u5f52", "\u5c71\u4e2d\u4f55\u4e8b\uff1f\u677e\u82b1\u917f\u9152\uff0c\u6625\u6c34\u714e\u8336", "\u63ac\u6c34\u6708\u5728\u624b\uff0c\u5f04\u82b1\u9999\u6ee1\u8863", "\u65e5\u66ae\u9152\u9192\u4eba\u5df2\u8fdc\uff0c\u6ee1\u5929\u98ce\u96e8\u4e0b\u897f\u697c", "\u7ec6\u96e8\u6e7f\u8863\u770b\u4e0d\u89c1\uff0c\u95f2\u82b1\u843d\u5730\u542c\u65e0\u58f0", "\u94fa\u5e8a\u51c9\u6ee1\u68a7\u6850\u6708\uff0c\u6708\u5728\u68a7\u6850\u7f3a\u5904\u660e"];
             const poemDisplay = document.getElementById('poem-display');
             if (poemDisplay && poems.length > 0) {
                 let currentPoemIndex = 0;
@@ -887,19 +936,15 @@
 
         // 项目折叠/展开
         function toggleProjects() {
-            const hidden = document.querySelectorAll('.project-hidden');
+            const items = document.querySelectorAll('.project-hidden, .project-visible');
             const btn = document.getElementById('toggle-projects');
-            const isExpanded = hidden.length > 0 && !hidden[0].classList.contains('project-hidden');
-            hidden.forEach(el => {
-                if (isExpanded) {
-                    el.classList.remove('project-visible');
-                    el.classList.add('project-hidden');
-                } else {
-                    el.classList.remove('project-hidden');
-                    el.classList.add('project-visible');
-                }
+            const expanded = btn.dataset.expanded === '1';
+            items.forEach(el => {
+                el.classList.toggle('project-hidden', expanded);
+                el.classList.toggle('project-visible', !expanded);
             });
-            btn.innerHTML = isExpanded
+            btn.dataset.expanded = expanded ? '0' : '1';
+            btn.innerHTML = expanded
                 ? '<i class="fa-solid fa-chevron-down mr-1"></i> 展开全部项目'
                 : '<i class="fa-solid fa-chevron-up mr-1"></i> 收起';
         }

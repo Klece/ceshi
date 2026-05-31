@@ -322,7 +322,8 @@ def get_github_projects():
 
             
 
-            return projects[:10]  # 只返回最近10个项目
+            projects.sort(key=lambda x: x['stars'], reverse=True)
+            return projects[:10]
 
         else:
 

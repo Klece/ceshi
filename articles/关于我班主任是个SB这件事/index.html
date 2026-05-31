@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>测试3 - Klece</title>
+    <title>关于我班主任是个SB这件事 - Klece</title>
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
@@ -124,7 +124,7 @@
                     <i class="fa-solid fa-arrow-left mr-2"></i>返回文章列表
                 </a>
                 <h1 class="text-3xl font-bold header-glow" style="font-family:'LoliFont','Inter',system-ui,sans-serif;color:#fff;">
-                    <i class="fa-solid fa-file-lines mr-3"></i>测试3
+                    <i class="fa-solid fa-file-lines mr-3"></i>关于我班主任是个SB这件事
                 </h1>
             </div>
         </div>
@@ -135,33 +135,10 @@
         <div class="max-w-4xl mx-auto animate-fade-in">
             <div class="glass-panel-plain rounded-2xl p-8">
                 <div class="article-text max-w-none" id="article-content" style="font-family:'LoliFont','Inter',system-ui,sans-serif;">
-                    <h1 id="3">测试3</h1>
-<p>最近写了个 B 站爬虫，记录一下过程。</p>
-<h2 id="_1">用到的库</h2>
+                    <h1 id="sb">我的班主任是个SB</h1>
 <ul>
-<li><code>requests</code>：发送 HTTP 请求</li>
-<li><code>BeautifulSoup</code> / <code>re</code>：解析 HTML</li>
-<li><code>json</code>：处理 API 返回数据</li>
+<li>暂定</li>
 </ul>
-<h2 id="_2">遇到的坑</h2>
-<h3 id="1">1. 请求头伪装</h3>
-<p>不加 User-Agent 会被直接拒绝：</p>
-<div class="highlight"><pre><span></span><code><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;User-Agent&quot;</span><span class="p">:</span> <span class="s2">&quot;Mozilla/5.0 ...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Referer&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.bilibili.com&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<h3 id="2-api">2. API 限制</h3>
-<p>同一个 IP 请求太频繁会被封，加了个简单的延时：</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-</code></pre></div>
-
-<h3 id="3_1">3. 编码问题</h3>
-<p>有时候返回的数据是乱码，指定 <code>utf-8</code> 解码就好。</p>
-<h2 id="_3">小结</h2>
-<p>爬虫不难，但要注意礼貌爬取，别给人家服务器造成压力。</p>
                 </div>
             </div>
         </div>

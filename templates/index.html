@@ -579,7 +579,7 @@
                             </div>
                         {% endif %}
                     </div>
-                    {% if github_info.recent_repos and github_info.recent_repos|length > 2 %}
+                    {% if github_info.recent_repos and github_info.recent_repos|length >= 2 %}
                     <div class="mt-4 text-center" id="toggle-projects-wrap">
                         <button id="toggle-projects" onclick="toggleProjects()" class="inline-flex items-center px-5 py-2 rounded-full bg-gradient-custom text-white font-medium hover:opacity-90 transition-opacity">
                             <i class="fa-solid fa-chevron-down mr-1"></i> 展开全部项目
@@ -918,19 +918,15 @@
 
         // 项目折叠/展开
         function toggleProjects() {
-            const hidden = document.querySelectorAll('.project-hidden');
+            const items = document.querySelectorAll('.project-hidden, .project-visible');
             const btn = document.getElementById('toggle-projects');
-            const isExpanded = hidden.length > 0 && !hidden[0].classList.contains('project-hidden');
-            hidden.forEach(el => {
-                if (isExpanded) {
-                    el.classList.remove('project-visible');
-                    el.classList.add('project-hidden');
-                } else {
-                    el.classList.remove('project-hidden');
-                    el.classList.add('project-visible');
-                }
+            const expanded = btn.dataset.expanded === '1';
+            items.forEach(el => {
+                el.classList.toggle('project-hidden', expanded);
+                el.classList.toggle('project-visible', !expanded);
             });
-            btn.innerHTML = isExpanded
+            btn.dataset.expanded = expanded ? '0' : '1';
+            btn.innerHTML = expanded
                 ? '<i class="fa-solid fa-chevron-down mr-1"></i> 展开全部项目'
                 : '<i class="fa-solid fa-chevron-up mr-1"></i> 收起';
         }
